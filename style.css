@@ -1,8 +1,11 @@
 body {
     background: url("img/pic.jpg");
-
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
-
 .left {
     display: inline-block;
     /* border: 2px solid red; */
@@ -110,4 +113,53 @@ body {
     display: block;
     width: 33%;
     margin: 20px auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .left {
+        position: static;
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    .mid {
+        width: 100%;
+    }
+
+    .right {
+        position: static;
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px auto;
+        padding: 0;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 15px auto;
+        padding: 20px;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .container button {
+        width: 100%;
+    }
 }
